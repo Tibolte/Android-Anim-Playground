@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:r="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <fr.northborders.AnimationPlayground.DrawPathSvg.SvgView
+            android:id="@+id/svg"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            r:phase="1.0"
+            r:duration="3000"
+            r:fadeFactor="10.0"
+            r:strokeWidth="2.0"
+            r:strokeColor="#ffffffff">
+
+    </fr.northborders.AnimationPlayground.DrawPathSvg.SvgView>
+
+</FrameLayout>

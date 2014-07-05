@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnimationPlayground.iml" filepath="$PROJECT_DIR$/AnimationPlayground.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AnimationLibraries/nineoldandroid/nineoldandroid.iml" filepath="$PROJECT_DIR$/../AnimationLibraries/nineoldandroid/nineoldandroid.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#ff009fd6</color>
+    <color name="accent2">#ff509b35</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Holo colors -->
+    <color name="red_holo">#c00</color>
+    <color name="blue_holo">#09c</color>
+    <color name="violet_holo">#93c</color>
+    <color name="green_holo">#690</color>
+    <color name="orange_holo">#f80</color>
+    <color name="green_sea_holo">#33ffb7</color>
+
+</resources>

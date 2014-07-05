@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        android:id="@+id/main_container"
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/blue_holo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <ScrollView
+            android:id="@+id/normal_mode_container"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red_holo"
+            android:fillViewport="true">
+
+
+        <!-- add or replace a fragment here -->
+        <RelativeLayout
+                android:id="@+id/form_container"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange_holo"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!-- add or replace a fragment here -->
+    <FrameLayout
+            android:id="@+id/edit_mode_container"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green_holo"
+            android:visibility="invisible">
+    </FrameLayout>
+
+</FrameLayout>
+
