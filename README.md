@@ -6,10 +6,10 @@ Latest animation ideas I developed to make apps more attractive.
 Why having such a repository?
 ===============================
 
-Through all projects I've been through, no matter how reliable the app you develop can be, there is one thing that users also expect from your app:
+Through all projects I've been through, no matter how reliable the app you are developing can be, there is one thing that users also expect from your app:
 animations and nice effects.
 Each project is always a playground to try new things, using new and better architectures, but also creating nice animations.
-I'm sill learning Android, at the beginning it seems that this platform is using static design with the xml language, but if you
+I'm still learning Android, at the beginning it seems that this platform is using static design with the xml language, but if you
 browse blogs and pay attention to the Android documentation, you'll discover that there is space for animations!
 
 Content
