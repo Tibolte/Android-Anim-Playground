@@ -3,6 +3,8 @@ Android-Anim-Playground
 
 Latest animation ideas I developed to make apps more attractive.
 
+![](https://raw.githubusercontent.com/Tibolte/Android-Anim-Playground/master/androiddemosvg.gif)
+
 Why having such a repository?
 ===============================
 
