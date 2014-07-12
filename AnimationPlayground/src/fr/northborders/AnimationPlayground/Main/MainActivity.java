@@ -7,6 +7,7 @@ import android.view.View;
 import fr.northborders.AnimationPlayground.DrawPath.ProgressActivity;
 import fr.northborders.AnimationPlayground.DrawPathSvg.DrawPathSvgActivity;
 import fr.northborders.AnimationPlayground.DynamicForm.DynamicFormActivity;
+import fr.northborders.AnimationPlayground.FragmentAnimation.FragmentAnimationActivity;
 import fr.northborders.AnimationPlayground.R;
 
 /**
@@ -34,7 +35,7 @@ public class MainActivity extends Activity {
 
     public void startDynamicForm(View v)
     {
-        Intent intent = new Intent(this, DynamicFormActivity.class);
+        Intent intent = new Intent(this, FragmentAnimationActivity.class);
         startActivity(intent);
     }
 }

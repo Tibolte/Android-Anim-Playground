@@ -2,6 +2,7 @@ package fr.northborders.AnimationPlayground.DrawPathSvg;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -27,11 +28,15 @@ public class DrawPathSvgActivity extends Activity {
         final View view = inflater.inflate(R.layout.item_svg, container, false);
         final SvgView svgView = (SvgView) view.findViewById(R.id.svg);
 
-        svgView.setSvgResource(R.raw.map_usa);
+        svgView.setSvgResource(R.raw.cloud);
         view.setBackgroundResource(R.color.accent);
 
         container.addView(view);
 
-        svgView.startAnimation();
+        Handler handlerDelay = new Handler();
+        handlerDelay.postDelayed(new Runnable(){
+            public void run() {
+                svgView.startAnimation();
+            }}, 2000);
     }
 }

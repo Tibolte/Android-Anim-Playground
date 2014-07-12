@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/accent2"
-            android:text="Dynamic form"
+            android:text="Fragment animation"
             android:padding="10dp"
             android:onClick="startDynamicForm"
             android:layout_marginTop="20dp"/>

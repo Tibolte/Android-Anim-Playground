@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:background="@color/blue_holo">
+
+
+    <!-- fragment 1 selection -->
+    <RelativeLayout
+            android:id="@+id/selectFragment1Container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/green_holo">
+
+        <TextView
+                android:id="@+id/txtSelectFragment1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:text="Show fragment 1"/>
+
+    </RelativeLayout>
+
+
+    <!-- fragment 2 selection -->
+    <RelativeLayout
+            android:id="@+id/selectFragment2Container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/red_holo">
+
+        <TextView
+                android:id="@+id/txtSelectFragment2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:text="Show fragment 2"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/txtBaseFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/white"
+            android:text="This is the base fragment"/>
+
+</LinearLayout>
