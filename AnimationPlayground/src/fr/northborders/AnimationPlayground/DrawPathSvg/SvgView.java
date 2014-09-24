@@ -9,7 +9,11 @@ import android.graphics.PathEffect;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.Animator.AnimatorListener;
 import com.nineoldandroids.animation.ObjectAnimator;
+
 import fr.northborders.AnimationPlayground.R;
 import fr.northborders.AnimationPlayground.Utils.SvgHelper;
 
@@ -19,7 +23,6 @@ import java.util.List;
 /**
  * Created by thibaultguegan on 29/05/2014.
  */
-@SuppressWarnings("ForLoopReplaceableByForEach")
 public class SvgView extends View {
 
     private static final String LOG_TAG = "StateView";
@@ -40,6 +43,9 @@ public class SvgView extends View {
     private float mOffsetY;
 
     private ObjectAnimator mSvgAnimator;
+    private SvgCompletedCallBack mCallback;
+
+	private float	mOriginphase;
 
 
     public SvgView(Context context, AttributeSet attrs) {
@@ -57,6 +63,7 @@ public class SvgView extends View {
                 mPaint.setStrokeWidth(a.getFloat(R.styleable.SvgView_strokeWidth, 1.0f));
                 mPaint.setColor(a.getColor(R.styleable.SvgView_strokeColor, 0xff000000));
                 mPhase = a.getFloat(R.styleable.SvgView_phase, 0.0f);
+                mOriginphase = mPhase;
                 mDuration = a.getInt(R.styleable.SvgView_duration, 4000);
                 mFadeFactor = a.getFloat(R.styleable.SvgView_fadeFactor, 10.0f);
             }
@@ -68,6 +75,7 @@ public class SvgView extends View {
     public float getPhase() {
         return mPhase;
     }
+    
 
     public void setPhase(float phase) {
         mPhase = phase;
@@ -149,14 +157,51 @@ public class SvgView extends View {
 
     public void startAnimation()
     {
+    	mPhase = mOriginphase;
         if (mSvgAnimator == null) {
 
             mSvgAnimator = ObjectAnimator.ofFloat(this, "phase", mPhase, 0.0f);
             mSvgAnimator.setDuration(mDuration);
             mSvgAnimator.start();
-        }
+            mSvgAnimator.addListener(new AnimatorListener() {
+				
+				@Override
+				public void onAnimationStart(Animator arg0) {
+					
+				}
+				
+				@Override
+				public void onAnimationRepeat(Animator arg0) {
+					
+				}
+				
+				@Override
+				public void onAnimationEnd(Animator arg0) {
+					if (mCallback != null) {
+						mCallback.onSvgCompleted();
+					}
+				}
+				
+				@Override
+				public void onAnimationCancel(Animator arg0) {
+					
+				}
+			});
+        }else {
+        	mSvgAnimator.start();
+		}
 
         invalidate();
 
     }
+
+	public SvgCompletedCallBack getmCallback() {
+		return mCallback;
+	}
+
+	public void setmCallback(SvgCompletedCallBack mCallback) {
+		this.mCallback = mCallback;
+	}
+	
+	
 }

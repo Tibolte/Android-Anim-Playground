@@ -5,6 +5,12 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
+    <Button
+        android:id="@+id/svg_btn_doagain"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:enabled="false"
+        android:text="doAgain!" />
 
     <LinearLayout
             android:id="@+id/container"
