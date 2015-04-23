@@ -36,4 +36,13 @@
             android:onClick="startDynamicForm"
             android:layout_marginTop="20dp"/>
 
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/accent2"
+            android:text="Elastic Download"
+            android:padding="10dp"
+            android:onClick="startElasticDownload"
+            android:layout_marginTop="20dp"/>
+
 </LinearLayout>

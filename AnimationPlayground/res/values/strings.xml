@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AnimationPlayground</string>
+    <string name="title_activity_elastic_download">ElasticDownloadActivity</string>
+    <string name="action_run_success_animation">Run success animation</string>
+    <string name="action_run_fail_animation">Run fail animation</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>
