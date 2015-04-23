@@ -1,31 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="fr.northborders.AnimationPlayground">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fr.northborders.AnimationPlayground" >
 
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17"
+        tools:overrideLibrary="is.arontibo.library" />
 
-    <uses-sdk android:minSdkVersion="8"
-              android:targetSdkVersion="17"
-              android:maxSdkVersion="19"
-            />
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
-
-
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".DrawPathSvg.DrawPathSvgActivity">
-
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity android:name=".DrawPathSvg.DrawPathSvgActivity" >
         </activity>
-        <activity android:name=".DrawPath.ProgressActivity">
-
+        <activity android:name=".DrawPath.ProgressActivity" >
         </activity>
-        <activity android:name=".Main.MainActivity">
+        <activity android:name=".Main.MainActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".DynamicForm.DynamicFormActivity" android:windowSoftInputMode="stateHidden|adjustResize" android:screenOrientation="portrait"/>
-        <activity android:name=".FragmentAnimation.FragmentAnimationActivity" android:screenOrientation="portrait"/>
-
+        <activity
+            android:name=".DynamicForm.DynamicFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".FragmentAnimation.FragmentAnimationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ElasticDownload.ElasticDownloadActivity"
+            android:label="@string/title_activity_elastic_download"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
+
 </manifest>
