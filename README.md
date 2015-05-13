@@ -1,5 +1,6 @@
 Android-Anim-Playground
 =======================
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android--Anim--Playground-brightgreen.svg?style=flat)](http://android-arsenal.com/details/3/682)
 
 Latest animation ideas I developed to make apps more attractive.
 
